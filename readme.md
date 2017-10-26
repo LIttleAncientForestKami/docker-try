@@ -24,6 +24,11 @@ Here you will find:
 
 1. [Docker overview - official site](https://docs.docker.com/engine/docker-overview/)
 2. [Docker in 12 minutes by Jake Wright](https://www.youtube.com/watch?time_continue=3&v=YFl2mCHdv24)
+3. [How Docker Works, Zariga Tongy](https://www.youtube.com/watch?v=pgiFwriExYg)
+
+
+> for good communication to know that "Docker" is an adjective, not a noun. You can't have "a Docker" because that doesn't tell you if you're talking about a Docker container (a process tree running within a namespace, complete with its own networking and file system), a Docker daemon (which manages the Docker containers), a Docker CLI (which talks to a Docker daemon), or a Docker image (which is template for a Docker container, including a read-only file system for any containers that start from the image). "A Docker" doesn't mean anything, because you could have the images without the daemon, the daemon without images or containers, the CLI without anything else
+
 
 ## Basic Test!
 
