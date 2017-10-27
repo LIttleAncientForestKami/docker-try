@@ -60,7 +60,9 @@ from https://www.wavemaker.com/portfolio-item/docker-ecosystem-year-in-review-20
 
 [Docker images and containers overview](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/)
 
+### Commands
 
+![Basic ones](images/Docker_BasicInteractionsNice.png)
 
 ## Basic Test!
 
