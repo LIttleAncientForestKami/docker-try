@@ -52,11 +52,11 @@ from https://www.wavemaker.com/portfolio-item/docker-ecosystem-year-in-review-20
 
 ![image](images/DockerImage.png)
 
-![images](images/Docker_DockerImages.png)
+![images](images/Docker_Images.png)
 
-![image -> containers](images/Docker_DockerImage2Containers.png)
+![image -> containers](images/Docker_Image2Containers.png)
 
-![image insides](images/Docker_DockerImageInsides.png)
+![image insides](images/Docker_ImageInsides.png)
 
 [Docker images and containers overview](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/)
 
