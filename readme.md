@@ -34,6 +34,34 @@ Here you will find:
 ![Docker year 2014](images/Docker-YearInReview-20141.png)
 from https://www.wavemaker.com/portfolio-item/docker-ecosystem-year-in-review-2014/
 
+![Docker community, partners, users](images/DockerCommunityUsersPartners.png)
+
+## Images, Dockerfiles, Containers
+
+1. Dockerfile is a text file
+2. It's called `Dockerfile`, **D**
+3. It uses it's own keywords `RUN`, `CMD`, `EXPOSE`, `FROM`
+4. It forms an image
+5. Image is like a snapshot of a system
+6. Image is a template according to which we start the container
+7. Container is a process tree (chroot and all that)
+8. Containers are not mutable (are **IMM**utable)
+
+![Dockerfile -> image](images/Docker_Dockerfile2Image.png)
+
+
+![image](images/DockerImage.png)
+
+![images](images/Docker_DockerImages.png)
+
+![image -> containers](images/Docker_DockerImage2Containers.png)
+
+![image insides](images/Docker_DockerImageInsides.png)
+
+[Docker images and containers overview](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/)
+
+
+
 ## Basic Test!
 
 1. What is Docker?

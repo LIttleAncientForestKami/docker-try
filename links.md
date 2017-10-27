@@ -8,13 +8,14 @@
 4. [Overview page, Docker architecture](https://docs.docker.com/engine/docker-overview/#docker-architecture)
 5. [Containers vs VMs](https://docs.docker.com/get-started/#containers-vs-virtual-machines)
 
-
 Official site is good for business: https://www.docker.com/what-docker
 
 ## How it works - deeper
 
 * https://www.oreilly.com/learning/docker-networking-service-discovery
 * http://www.computerweekly.com/feature/Docker-storage-101-How-storage-works-in-Docker
+* [Docker images and containers overview](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/)
+
 
 ## Security
 
