@@ -35,6 +35,13 @@ https://www.projectatomic.io/blog/2014/08/is-it-safe-a-look-at-docker-and-securi
 
 https://security.stackexchange.com/questions/88790/is-it-safe-to-trust-a-docker-container
 
+## Docker labs
+
+1. https://www.katacoda.com/courses/docke://www.katacoda.com/courses/docker
+2. http://training.play-with-docker.com/dev-landing/
+3. https://labs.play-with-docker.com
+	https://github.com/play-with-docker/play-with-docker
+
 
 ## Rest to sieve-through:
 https://news.ycombinator.com/item?id=8167928
