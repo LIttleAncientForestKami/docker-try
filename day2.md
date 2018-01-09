@@ -7,16 +7,16 @@ Here it's `redis`, choose your own if you wish.
 Which one? The official one is safest bet.
 
 `docker run redis[:latest]`
-By default `:latest` is impled.
+By default `:latest` is implied, so I'm marking it here with [], as optional.
 
-Is it running? Well, it is, but we're stuck with it. Let's run in the background:
+Is it running? Well, it is, but we're stuck with it. Let's run in the background, as a kinda **d**eamonized process:
 `docker run -d redis`
 I skipped `:latest` since it's implied either way.
 
 But... does it run now?
 `docker ps`
 
-And... how it's doing?
+And... how it's doing? Like, config... logs?
 `docker inspect elated_hawking
 
 docker logs elated_hawking`
@@ -59,37 +59,28 @@ Mount the `guest-dir` and changes there are reflected on a container.
 `docker run -d --name redisMapped -v /opt/docker/data/redis:/data redis`\
 	To map current directory: `$PWD`
 
--d = w tle
--it = powłoka
+-d = in the background
+-it = interactive
 	certain images allow to override (then you may have Ubuntu image that runs shell and Ubuntu image that runs OS command...)
 	docker run ubuntu ps
 	docker run -it ubuntu bash
 
+**Exercises:** 
 
-start a docker container, build static HTML, serve it using Nginx
+1. start a docker container, build static HTML, serve it using Nginx. If stuck, look at `Dockerfiles/static-hello-world`.
+2. have a GNU/Linux dev box with Java 8, Maven and Git installed (search DockerHub for Java 8 and you will find few interesting ones, like [Kai Winter's one](https://hub.docker.com/r/kaiwinter/docker-java8-maven/), if stuck, look at **Java8 image** below.
+3. 
 
-vim Dockerfile
-i
-FROM nginx:alpine
+## Java8 image
 
-COPY . /usr/share/nginx/html
-Esc
-:wq
-vim index.html
-i
-<h1>Hello World</h1>
-Esc
-:wq
-docker buid -t webserver-image:v1 .
-docker images
-   (name: webserver-image, version: v1)
-A port? Trza wystawić port:
- -p <host-port>:<container-port>
-docker run -d -p 80:80 webserver-image:v1
-docker run -d -p 80:80 webserver-image - nie ma :latest, bo mamy v1 tylko, a nie :latest!
+Several ways to have one, to be honest, but they boil down to two choices.
 
-dobrać się do?
-curl docker
+1. Pull one from the Registry. Search the hub, choose, pull.
+2. Build one (from either 1. above, or from bare-bones OS Docker image).
 
-JAK TO DZIAŁA? JAK curl docker DZIAŁA?
+You can find one you want (or one that fits you): 
 
+`docker pull stephenreed/jenkins-java8-maven-git`
+`docker pull kaiwinter/docker-java8-maven`
+
+Or you can choose that as your base and build upon it (for instance, adding Git to Kai's Docker image). Or you can choose your preferred distro and 'fit it' with Java 8 (Oracle one? OpenJDK? Other?).

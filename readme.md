@@ -87,5 +87,7 @@ from https://www.wavemaker.com/portfolio-item/docker-ecosystem-year-in-review-20
 13. Docker Engine, Machine, toolbox?
 14. EE, CE?
 15. Running a container?
+ 
+## Agenda
 
-
+![Day 2](images/TrainingPlan2.png)
